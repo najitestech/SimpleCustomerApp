@@ -47,7 +47,7 @@ pipeline {
                 //rtPublishBuildInfo (  
                 rtUpload (
                     serverId: "ARTIFACTORY_SERVER"
-                    buildName: "NewBuild"
+                    
                 )
             }
         }
