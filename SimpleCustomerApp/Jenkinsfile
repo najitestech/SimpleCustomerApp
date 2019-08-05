@@ -47,15 +47,7 @@ pipeline {
                 //rtPublishBuildInfo (  
                 rtUpload (
                     buildName: "SimpleCustomerApp",
-                    serverId: "ARTIFACTORY_SERVER"
-      {
-          "files" [
-            {
-              "pattern" "*",
-              "target": "repo-java-war/SimpleCustomerApp/"
-            }
-         ]
-        }           
+                    serverId: "ARTIFACTORY_SERVER"           
                     
                 )
             }
