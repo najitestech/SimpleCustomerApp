@@ -44,9 +44,9 @@ pipeline {
         }  
       stage ('Publish build info') {
             steps {
-                //rtPublishBuildInfo (  
+                PublishBuildInfo (  
                     serverId: "ARTIFACTORY_SERVER"
-                //)
+                )
             }
         }
     }  
