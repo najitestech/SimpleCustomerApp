@@ -49,7 +49,7 @@ pipeline {
                     buildName: 'SimpleCustomerApp',
                     serverId: 'ARTIFACTORY_SERVER'
       {
-          "files": [
+          "files" [
             {
               "pattern": "*",
               "target": "repo-java-war/SimpleCustomerApp/"
