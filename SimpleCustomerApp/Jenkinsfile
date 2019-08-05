@@ -40,7 +40,7 @@ pipeline {
       stage ('Publish build info') {
             steps {
                 //rtPublishBuildInfo (
-                example-repo-local (  
+                examplerepolocal (  
                     serverId: "ARTIFACTORY_SERVER"
                 )
             }
