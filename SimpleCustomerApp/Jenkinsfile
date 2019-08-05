@@ -46,8 +46,8 @@ pipeline {
             steps {
                 //rtPublishBuildInfo (  
                 rtUpload (
-                    buildName: 'SimpleCustomerApp',
-                    serverId: 'ARTIFACTORY_SERVER'
+                    buildName: "SimpleCustomerApp",
+                    serverId: "ARTIFACTORY_SERVER"
       {
           "files" [
             {
