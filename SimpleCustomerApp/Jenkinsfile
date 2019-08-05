@@ -19,7 +19,8 @@ pipeline {
             }
           }
         }
-      stage ('Artifactory configuration') {
+        
+        stage ('Artifactory configuration') {
             steps {
                 rtServer (
                     id: "ARTIFACTORY_SERVER",
@@ -42,7 +43,7 @@ pipeline {
                 )
             }
         }  
-      stage ('Publish build info') {
+        stage ('Publish build info') {
             steps {
                 //rtPublishBuildInfo (  
                 rtUpload (
