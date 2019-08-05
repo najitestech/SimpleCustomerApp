@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    environment {
+      ARTIFACTORY_SERVER = "192.168.0.17" 
+      SERVER_URL = "http://192.168.0.17:8081/artifactory"
+      CREDENTIALS = "1234"
+      }
     
     stages {
         stage('Compile Stage') {
