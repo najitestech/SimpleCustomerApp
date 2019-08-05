@@ -1,6 +1,11 @@
 pipeline {
         agent any
         stages {
+          stage ('Clone') {
+            steps {
+                git branch: 'master', url: "git@github.com:najitestech/SimpleCustomerApp.git"
+            }
+         }
           stage("build & SonarQube analysis") {
             agent any
             steps {
