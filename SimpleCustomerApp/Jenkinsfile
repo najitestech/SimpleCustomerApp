@@ -51,7 +51,7 @@ pipeline {
       {
           "files" [
             {
-              "pattern": "*",
+              "pattern" "*",
               "target": "repo-java-war/SimpleCustomerApp/"
             }
          ]
